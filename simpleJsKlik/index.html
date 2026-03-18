@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Latihan JavaScript</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body
+    class="bg-gradient-to-r from-blue-400 to-cyan-400 h-screen flex items-center justify-center"
+  >
+    <div class="bg-white p-10 rounded-xl shadow-lg text-center space-y-5">
+      <h1 id="judul" class="text-3xl font-bold text-gray-800">
+        Selamat Datang
+      </h1>
+
+      <button
+        id="tombol"
+        class="px-6 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition"
+      >
+        Klik Saya
+      </button>
+    </div>
+
+    <script>
+      let judul = document.getElementById("judul");
+      let tombol = document.getElementById("tombol");
+
+      tombol.addEventListener("click", function () {
+        judul.innerHTML = "Berhasil!";
+        judul.classList.add("text-green-600");
+      });
+    </script>
+  </body>
+</html>
